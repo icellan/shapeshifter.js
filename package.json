@@ -1,19 +1,19 @@
 {
-  "name": "@libitx/shapeshifter.js",
+  "name": "@icellan/shapeshifter.js",
   "version": "0.1.0",
   "description": "Shapeshifter.js lets you quickly and simply switch between Bitcoin transaction formats.",
   "main": "dist/shapeshifter.cjs.js",
   "module": "index.js",
   "unpkg": "dist/shapeshifter.min.js",
   "author": "libitx",
-  "repository": "https://github.com/libitx/shapeshifter.js",
+  "repository": "https://github.com/icellan/shapeshifter.js",
   "license": "Apache-2.0",
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "test": "mocha \"test/**/*.test.js\" --require esm"
   },
   "peerDependencies": {
-    "bsv": "^2.0.0-beta"
+    "bsv": "^1.5.3"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -21,7 +21,7 @@
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
-    "bsv": "^2.0.0-beta",
+    "bsv": "^1.5.3",
     "chai": "^4.2.0",
     "core-js": "^3.6.5",
     "esm": "^3.2.25",
