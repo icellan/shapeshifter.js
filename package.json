@@ -1,6 +1,6 @@
 {
-  "name": "@icellan/shapeshifter.js",
-  "version": "0.1.0",
+  "name": "icellan-shapeshifter.js",
+  "version": "0.1.1",
   "description": "Shapeshifter.js lets you quickly and simply switch between Bitcoin transaction formats.",
   "main": "dist/shapeshifter.cjs.js",
   "module": "index.js",

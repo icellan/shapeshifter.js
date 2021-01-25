@@ -3,6 +3,7 @@ import { Transaction } from 'bsv'
 import Shapeshifter from '../lib/shapeshifter'
 import * as ttx from './support/test_tx.js'
 import util from 'util'
+import { mapRawTx } from './support/test_map';
 
 const Tx = Transaction;
 
@@ -195,6 +196,13 @@ describe('Shapeshifter.toBob()', () => {
     const test = { ...ttx.bob }
     delete test._id
     assert.deepEqual(res, test)
+  })
+
+  it('converts map TXO object to BOB object', () => {
+    const res = Shapeshifter.toBob(mapRawTx)
+    assert.equal(res.out[0].tape[2].cell[0].i, 0);
+    assert.equal(res.out[0].tape[2].cell[1].i, 1);
+    assert.equal(res.out[0].tape[2].cell[2].i, 2);
   })
 
   it('handles BOB object to BOB object', () => {
